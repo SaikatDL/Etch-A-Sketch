@@ -5,9 +5,12 @@ body.appendChild(container);
 function createDiv (number) {
     for (let i = 1; i <= number*number; i++) {
         const div = document.createElement('div');
-        div.classList.add('grid')
+        div.classList.add('grid');
         container.appendChild(div);
+        let size = 500/number +'px';
+        div.style.width = size;
+        div.style.height = size;
     }
-    console.log(container.children.length)
+    console.log(container.children.length);
 }
 createDiv(16);
