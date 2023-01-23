@@ -5,7 +5,7 @@ body.appendChild(container);
 function createDiv (number) {
     for (let i = 1; i <= number*number; i++) {
         const div = document.createElement('div');
-        div.classList.add('grid');
+        div.classList.add('square');
         container.appendChild(div);
         let size = 500/number +'px';
         div.style.width = size;
@@ -13,4 +13,7 @@ function createDiv (number) {
     }
     console.log(container.children.length);
 }
+
+
+
 createDiv(16);
