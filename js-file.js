@@ -33,7 +33,7 @@ function createDiv (number) { //this will create square div's and add color upon
 const gridNumber = document.querySelector('.grid-number');
 gridNumber.addEventListener('click', () => {
     let number = prompt("Choose the number of squares per side for the new grid (maximum:100):", 16);
-    if (number < 101 && number > 1) {
+    if (number < 101 && number > 0) {
         container.replaceChildren();
         return createDiv(number);
     }
